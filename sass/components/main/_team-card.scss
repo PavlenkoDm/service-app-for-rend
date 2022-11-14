@@ -1,0 +1,59 @@
+.team-card {
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__meta {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    
+        color: var(--color-titles);
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__soclist {
+        @extend %flex-j-a;
+        gap: 10px;
+    }
+}
+
+.team-card__soclink {
+    @extend %flex-j-a;
+    width: 44px;
+    height: 44px;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+
+    fill: var(--color-sl-primary);
+
+    transition: background-color var(--transition-duration-cubic),
+        fill var(--transition-duration-cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-accent);
+        fill: #fff;
+    }
+}

@@ -1,0 +1,14 @@
+.header {
+    width: 1600px;
+    border-bottom: 1px solid #ececec;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-conteiner {
+    @extend %flex-a;
+}
+
+.navigation {
+    @extend %flex-a;
+}

@@ -1,0 +1,40 @@
+.footer {
+    background-color: var(--color-bg-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-conteiner {
+    align-items: baseline;
+    display: flex;
+    /* gap: 70px; */
+}
+
+.footer-contacts-block {
+    display: block;
+    margin-right: 70px;
+    width: 231px;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: #fff;
+}
+
+.address__item + .address__item {
+    margin-top: 9px;
+}
+
+.address__link {
+    display: block;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.address__geolocation {
+    color: #fff;
+}

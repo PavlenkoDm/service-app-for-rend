@@ -1,0 +1,38 @@
+.footer-soclink-block {
+    display: block;
+    margin-right: 93px;
+
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #fff;
+    }
+}
+
+.footer-soclink-block__link {
+    @extend %flex-j-a;
+    width: 44px;
+    height: 44px;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+
+    fill: #fff;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color var(--transition-duration-cubic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-accent);
+    }
+}

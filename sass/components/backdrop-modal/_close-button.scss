@@ -1,0 +1,13 @@
+.close-button {
+    position: absolute;
+    @extend %flex-j-a;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    background-color: #fff;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
