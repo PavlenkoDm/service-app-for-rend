@@ -1,8 +1,19 @@
 .conteiner {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding: 0 15px;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        width: $mobile-breakpoint;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: $tablet-breakpoint;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: $desktop-breakpoint;
+    }
 }
 
 .visually-hidden {

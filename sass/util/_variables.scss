@@ -10,4 +10,10 @@
     --color-sl-primary: #afb1b8;
     --transition-duration-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --font: 'Roboto', sans-serif;
+    
 }
+
+$mobile-breakpoint: 480px;
+$tablet-breakpoint-predot: 767px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;

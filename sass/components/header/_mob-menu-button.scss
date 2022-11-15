@@ -1,0 +1,9 @@
+.mobile-menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: none;
+    }
+}

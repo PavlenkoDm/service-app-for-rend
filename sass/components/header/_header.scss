@@ -1,14 +1,40 @@
 .header {
-    width: 1600px;
     border-bottom: 1px solid #ececec;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        width: $mobile-breakpoint;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: $tablet-breakpoint;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        min-width: $desktop-breakpoint;
+        max-width: 1600px;
+    }
 }
 
 .header-conteiner {
-    @extend %flex-a;
+    
+    @media screen and (max-width: $tablet-breakpoint-predot) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: flex;
+        align-items: center;
+    }
+       
 }
 
 .navigation {
     @extend %flex-a;
+
+    @media screen and (max-width: $tablet-breakpoint-predot) {
+        justify-content: space-between;
+    }
 }

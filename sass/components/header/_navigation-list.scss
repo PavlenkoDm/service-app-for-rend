@@ -1,6 +1,15 @@
 .nav-list {
-    display: flex;
-    margin-left: 93px;
+    display: none;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: flex;
+         margin-left: 88px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        display: flex;
+        margin-left: 93px;
+    }
 }
 
 .nav-list__item + .nav-list__item {
