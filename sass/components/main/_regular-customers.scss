@@ -1,22 +1,33 @@
 .regular-customers__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
 
     color: var(--color-titles);
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+    }
 }
 
 .regular-customers__list {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: $desktop-breakpoint-predot) {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;        
+    }
 }
 
 .regular-customers__link {
     @extend %flex-j-a;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--color-sl-primary);
     border-radius: 5px;
@@ -29,5 +40,13 @@
     &:focus {
         border-color: var(--color-accent);
         fill: var(--color-accent);
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 170px;
     }
 }

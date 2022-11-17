@@ -5,7 +5,13 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-        margin-right: 30px;
+        @media screen and (max-width: $tablet-breakpoint-predot) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: $desktop-breakpoint) {
+            margin-right: 30px;
+        }        
     }
 
     &__meta {

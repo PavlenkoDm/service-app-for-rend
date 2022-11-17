@@ -1,8 +1,7 @@
 .modal {
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 528px;
+    left: 50%;    
 
     padding: 40px;
 
@@ -13,6 +12,18 @@
 
     transform: translate(-50%, -50%);
     transition: transform var(--transition-duration-cubic);
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        width: 95vw;
+    }
+
+    @media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 528px;
+    }
 }
 
 .is-hidden .modal {

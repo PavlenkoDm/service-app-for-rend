@@ -1,6 +1,22 @@
 .footer-subscribe-block {
     display: block;
-    width: 570px;
+
+    @media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+       margin-left: 166px;
+       margin-right: 152px;
+    }
+
+    @media screen and (max-width: $desktop-breakpoint-predot) {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 570px;
+    }
 }
 
 .form-subscribe__label {
@@ -13,15 +29,24 @@
 
     color: #fff;
     cursor: pointer;
+
+
 }
 
 .form-subscribe__wrapper {
-    @extend %flex-j-a;
+    @media screen and (max-width: $desktop-breakpoint-predot) {
+        display: block;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .form-subscribe__input {
     display: block;
-    width: 358px;
     height: 50px;
     padding-left: 16px;
     padding-top: 15x;
@@ -47,6 +72,18 @@
     &:focus {
         border-color: var(--color-accent);
     }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 358px;
+    }
 }
 
 .button-subscribe {
@@ -55,8 +92,7 @@
     width: 200px;
     height: 50px;
     padding: 10px 28px;
-    margin-left: 12px;
-
+    
     background-color: var(--color-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -83,4 +119,17 @@
         margin-left: 10px;
         fill: #fff;
     }
+}
+
+.button-subscribe--geometry {
+    @media screen and (max-width: $desktop-breakpoint-predot) {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        margin-left: 12px;
+    }
+    
 }

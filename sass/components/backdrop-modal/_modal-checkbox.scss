@@ -44,10 +44,26 @@
     margin-left: 8.4px;
 
     color: var(--color-text-primary);
+
+    @media screen and (max-width: 479px) {
+        font-size: 8px;
+    }
+
+    @media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+        font-size: 12px;
+    }
 }
 
 .checkbox__link {
     display: inline-block;
     margin-left: 4px;
     color: var(--color-accent);
+
+    @media screen and (max-width: 479px) {
+        font-size: 8px;
+    }
+
+    @media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+        font-size: 12px;
+    }
 }

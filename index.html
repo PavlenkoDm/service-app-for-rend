@@ -27,7 +27,6 @@
                 <button class="mobile-menu-button" type="button">
                     <svg width="40" height="40">
                         <use href="./images/icon.svg#icon-burger"></use>
-                        <use href="./images/icon.svg#icon-burger-close"></use>
                     </svg>
                 </button>
             
@@ -138,33 +137,55 @@
         </section>
 
         <!-- What we do -->
-        <!-- <section class="section wwd">
+        <section class="section wwd">
 
             <div class="conteiner">
 
                 <h2 class="wwd__title">Чим ми займаємося</h2>
 
                 <ul class="list-nd wwd-list">
+
                     <li class="wwd-list__item">
-                        <img src="./images/card-1.jpg" alt="руки людини яка за столом за допомогою клавіатури програмує на планшеті" width="370" height="294">
+                        <img 
+                            srcset="./images/desktop/card-one@1x.jpg 1x, ./images/desktop/card-one@2x.jpg 2x" 
+                            src="./images/desktop/card-one@1x.jpg" 
+                            alt="Людина яка за столом за допомогою клавіатури програмує на планшеті" 
+                            width="370" 
+                            height="294"
+                        />
                         <div class="wwd-list__description">Десктопні додатки</div>
                     </li>
+
                     <li class="wwd-list__item">
-                        <img src="./images/card-2.jpg" alt="Людина з телефоном в руці, яка на ноутбуці вибирає дизайн макету сайту який буде відображатися в телефоні" width="370" height="294">
+                        <img 
+                            srcset="./images/desktop/card-two@1x.jpg 1x, ./images/desktop/card-two@2x.jpg 2x"
+                            src="./images/desktop/card-two@1x.jpg" 
+                            alt="Людина з телефоном в руці, яка на ноутбуці вибирає дизайн макету сайту який буде відображатися в телефоні" 
+                            width="370" 
+                            height="294"
+                        />
                         <div class="wwd-list__description">Мобільні додатки</div>
                     </li>
+
                     <li class="wwd-list__item">
-                        <img src="./images/card-3.jpg" alt="Людина з планшетом в руці вибирає на ньому колір з кольорової палітри за допомогою інтерактивної ручки" width="370" height="294">
+                        <img 
+                            srcset="./images/desktop/card-three@1x.jpg 1x, ./images/desktop/card-three@2x.jpg 2x"
+                            src="./images/desktop/card-three@1x.jpg" 
+                            alt="Людина з планшетом в руці вибирає на ньому колір з кольорової палітри за допомогою інтерактивної ручки" 
+                            width="370" 
+                            height="294"
+                        />
                         <div class="wwd-list__description">Дизайнерські рішення</div>
                     </li>
+
                 </ul>
 
             </div>
 
-        </section> -->
+        </section>
 
         <!-- Team -->
-        <!-- <section class="section team">
+        <section class="section team">
 
             <div class="conteiner">
 
@@ -173,7 +194,12 @@
                 <ul class="list-nd team__list">
 
                     <li class="team-card">
-                        <img src="./images/photo-igo-dem.jpg" alt="Чоловік з бородою в коричневій рубашці та в окулярах" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mobile/photo-igo-dem-mobile@1x.jpg 1x, ./images/mobile/photo-igo-dem-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/photo-igo-dem-tablet@1x.jpg 1x, ./images/tablet/photo-igo-dem-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/desktop/photo-igo-dem-desktop@1x.jpg 1x, ./images/desktop/photo-igo-dem-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/desktop/photo-igo-dem-desktop@1x.jpg" alt="Чоловік з бородою в коричневій рубашці та в окулярах" />
+                        </picture>
                         <div class="team-card__meta">
                             <h3 class="team-card__title">Ігор Дем'яненко</h3>
                             <p class="team-card__description">Product Designer</p>
@@ -211,7 +237,12 @@
                     </li>
 
                     <li class="team-card">
-                        <img src="./images/photo-olg-rep.jpg" alt="Білява жінка в окулярах та чорному жекеті з перхрещеними руками на грудях" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mobile/photo-olg-rep-mobile@1x.jpg 1x, ./images/mobile/photo-olg-rep-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/photo-olg-rep-tablet@1x.jpg 1x, ./images/tablet/photo-olg-rep-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/desktop/photo-olg-rep-desktop@1x.jpg 1x, ./images/desktop/photo-olg-rep-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/desktop/photo-olg-rep-desktop@1x.jpg" alt="Білява жінка в окулярах та чорному жекеті з перхрещеними руками на грудях" />
+                        </picture>
                         <div class="team-card__meta">
                             <h3 class="team-card__title">Ольга Рєпіна</h3>
                             <p class="team-card__description">Frontend Developer</p>
@@ -249,7 +280,12 @@
                     </li>
 
                     <li class="team-card">
-                        <img src="./images/photo-miko-tar.jpg" alt="Чоловік в світлій рубашці посміхається і дивиться на ліво від себе" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mobile/photo-miko-tar-mobile@1x.jpg 1x, ./images/mobile/photo-miko-tar-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/photo-miko-tar-tablet@1x.jpg 1x, ./images/tablet/photo-miko-tar-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/desktop/photo-miko-tar-desktop@1x.jpg 1x, ./images/desktop/photo-miko-tar-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/desktop/photo-miko-tar-desktop@1x.jpg" alt="Чоловік в світлій рубашці посміхається і дивиться на ліво від себе" />
+                        </picture>
                         <div class="team-card__meta">
                             <h3 class="team-card__title">Микола Тарасов</h3>
                             <p class="team-card__description">Marketing</p>
@@ -284,10 +320,16 @@
                                 </li>
                             </ul>
                         </div>
+                        
                     </li>
 
                     <li class="team-card">
-                        <img src="./images/photo-miha-erm.jpg" alt="Молодий чоловік в чорній футболці та окулярах з перехрещеними на грудях руками, намагається посміхатись" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mobile/photo-miha-erm-mobile@1x.jpg 1x, ./images/mobile/photo-miha-erm-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/photo-miha-erm-tablet@1x.jpg 1x, ./images/tablet/photo-miha-erm-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/desktop/photo-miha-erm-desktop@1x.jpg 1x, ./images/desktop/photo-miha-erm-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img src="./images/desktop/photo-miha-erm-desktop@1x.jpg" alt="Молодий чоловік в чорній футболці та окулярах з перехрещеними на грудях руками, намагається посміхатись" />
+                        </picture>
                         <div class="team-card__meta">
                             <h3 class="team-card__title">Михайло Єрмаков</h3>
                             <p class="team-card__description">UI Designer</p>
@@ -328,16 +370,17 @@
 
             </div>
 
-        </section> -->
+        </section>
 
         <!-- Regular Customers -->
-        <!-- <section class="section">
+        <section class="section">
 
             <div class="conteiner">
 
                 <h2 class="regular-customers__title">Постійні клієнти</h2>
 
                 <ul class="list-nd regular-customers__list">
+
                     <li>
                         <a class="regular-customers__link" href="">
                             <svg width="106" height="60">
@@ -345,6 +388,7 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
                         <a class="regular-customers__link" href="">
                             <svg width="106" height="60">
@@ -352,6 +396,7 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
                         <a class="regular-customers__link" href="">
                             <svg width="106" height="60">
@@ -359,6 +404,7 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
                         <a class="regular-customers__link" href="">
                             <svg width="106" height="60">
@@ -366,6 +412,7 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
                         <a class="regular-customers__link" href="">
                             <svg width="106" height="60">
@@ -373,6 +420,7 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
                         <a class="regular-customers__link" href="">
                             <svg width="106" height="60">
@@ -380,76 +428,81 @@
                             </svg>
                         </a>
                     </li>
+
                 </ul>
 
             </div>
 
-        </section> -->
+        </section>
 
     </main>
 
 
-    <!-- <footer class="footer">
+    <footer class="footer">
 
         <div class="conteiner footer-conteiner">
 
-            <div class="footer-contacts-block">
+            <div class="footer__contsocwrapper footer__contsocwrapper--geometry">
 
-                <a class="logo footer-logo" href="./index.html" lang="en"><span class="logo__accent">Web</span>Studio</a>
+                <div class="footer-contacts-block">
 
-                <address>
-                    <ul class="list-nd">
-                        <li class="address__item">
-                            <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">
-                                <span class="address__geolocation">м. Київ, пр-т Лесі Українки, 26</span>
+                    <a class="logo footer-logo" href="./index.html" lang="en"><span class="logo__accent">Web</span>Studio</a>
+
+                    <address>
+                        <ul class="list-nd">
+                            <li class="address__item">
+                                <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">
+                                    <span class="address__geolocation">м. Київ, пр-т Лесі Українки, 26</span>
+                                </a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+
+                </div>
+
+                <div class="footer-soclink-block">
+
+                    <p class="footer-soclink-block__title">Приєднуйтесь</p>
+
+                    <ul class="list-nd footer-soclink-block__list">
+                        <li>
+                            <a class="footer-soclink-block__link" aria-label="instagram" href="https://www.instagram.com/" target="_blank">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li>
+                            <a class="footer-soclink-block__link" aria-label="twitter" href="https://twitter.com/" target="_blank">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li>
+                            <a class="footer-soclink-block__link" aria-label="facebook" href="https://facebook.com/" target="_blank">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-soclink-block__link" aria-label="linkedin" href="https://linkedin.com/" target="_blank">
+                                <svg width="20" height="20">
+                                    <use href="./images/icon.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                    
+                </div>
 
-            </div>
-
-            <div class="footer-soclink-block">
-
-                <p class="footer-soclink-block__title">Приєднуйтесь</p>
-
-                <ul class="list-nd footer-soclink-block__list">
-                    <li>
-                        <a class="footer-soclink-block__link" aria-label="instagram" href="https://www.instagram.com/" target="_blank">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-soclink-block__link" aria-label="twitter" href="https://twitter.com/" target="_blank">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-soclink-block__link" aria-label="facebook" href="https://facebook.com/" target="_blank">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-soclink-block__link" aria-label="linkedin" href="https://linkedin.com/" target="_blank">
-                            <svg width="20" height="20">
-                                <use href="./images/icon.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                
             </div>
 
             <div class="footer-subscribe-block">
@@ -462,7 +515,7 @@
 
                         <input class="form-subscribe__input" type="email" name="mail" id="email-footer" placeholder="E-mail">
 
-                        <button class="button-subscribe" type="submit">                        
+                        <button class="button-subscribe button-subscribe--geometry" type="submit">                        
                             <span class="button-subscribe__title">Підписатися</span>
                             <svg class="button-subscribe__icon" width="24" height="24">
                                 <use href="./images/icon.svg#icon-send"></use>
@@ -477,9 +530,63 @@
         
         </div>
 
-    </footer> -->
+    </footer>
 
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+    
+        <button class="mobile-menu__closebutton" type="button">
+            <svg width="40" height="40">
+                <use href="./images/icon.svg#icon-burger-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="list-nd mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a class="link-nd mobile-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="link-nd mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="link-nd mobile-menu__link" href="#">Контакти</a>
+            </li>
+        </ul>
+    
+        <ul class="list-nd mobile-menu-contacts">
+    
+            <li class="mobile-menu-contacts__item">
+                <a class="link-nd mobile-menu-contacts__link  active-contact" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                </a>
+            </li>
+    
+            <li class="mobile-menu-contacts__item">
+                <a class="link-nd mobile-menu-contacts__link" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+    
+        </ul>
+    
+        <ul class="list-nd mobile-menu-soclist">
+            <li class="mobile-menu-soclist__item">
+                <a class="link-nd mobile-menu-soclist__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu-soclist__item">
+                <a class="link-nd mobile-menu-soclist__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu-soclist__item">
+                <a class="link-nd mobile-menu-soclist__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu-soclist__item">
+                <a class="link-nd mobile-menu-soclist__link" href="#">LinkedIn</a>
+            </li>
+        </ul>
+    
+    </div>
 
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
 
         <div class="modal">
@@ -552,7 +659,6 @@
         </div>
 
     </div>
-
 
     <script src="./js/modal.js"></script>
 

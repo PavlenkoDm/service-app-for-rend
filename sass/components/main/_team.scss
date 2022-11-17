@@ -2,20 +2,42 @@
     background-color: var(--color-bg-secondary);
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
     
         color: var(--color-titles);
+
+        @media screen and (min-width: $desktop-breakpoint) {
+            margin-bottom: 50px;
+        
+            font-size: 36px;
+        }
     }
 
     &__list {
-        @extend %flex-j;
+        @media screen and (max-with: $tablet-breakpoint-predot) {
+            display: block;
+        }
+
+        @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        @media screen and (min-width: $desktop-breakpoint) {
+            display: flex;
+            justify-content: center;
+        }        
     }
 }
+
 
 
 
