@@ -3,6 +3,10 @@
     margin-right: auto;
     padding: 0 15px;
 
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        width: 100vw;
+    }
+
     @media screen and (min-width: $mobile-breakpoint) {
         width: $mobile-breakpoint;
     }

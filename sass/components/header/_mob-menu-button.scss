@@ -3,6 +3,13 @@
     background-color: transparent;
     border: none;
 
+    transition: fill var(--transition-duration-cubic);
+    
+    &:hover,
+    &:focus {
+        fill: var(--color-accent);
+    }
+
     @media screen and (min-width: $tablet-breakpoint) {
         display: none;
     }
