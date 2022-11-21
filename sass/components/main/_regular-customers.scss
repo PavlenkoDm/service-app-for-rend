@@ -17,18 +17,37 @@
 
 .regular-customers__list {
     display: flex;
-    gap: 30px;
-    @media screen and (max-width: $desktop-breakpoint-predot) {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;        
+    flex-wrap: wrap;
+    gap: 30px;    
+}
+
+.regular-customers__item {
+    height: 92px;
+
+    @media screen and (max-width: $tablet-breakpoint-predot) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: $mobile-breakpoint) {
+        width: 210px;
+    }
+    
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: 226px;
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 170px;
+        flex-basis: calc((100% - 150px) / 6);
     }
 }
 
 .regular-customers__link {
     @extend %flex-j-a;
-    width: 210px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
+
     border: 1px solid var(--color-sl-primary);
     border-radius: 5px;
 
@@ -40,13 +59,5 @@
     &:focus {
         border-color: var(--color-accent);
         fill: var(--color-accent);
-    }
-
-    @media screen and (min-width: $tablet-breakpoint) {
-        width: 226px;
-    }
-
-    @media screen and (min-width: $desktop-breakpoint) {
-        width: 170px;
-    }
+    }   
 }
