@@ -1219,7 +1219,16 @@ img {
 
 .mobile-menu-contacts {
   display: block;
-  margin-bottom: 64px;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu-contacts {
+    margin-bottom: 8vh;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts {
+    margin-bottom: 64px;
+  }
 }
 .mobile-menu-contacts__item:first-child {
   margin-bottom: 32px;

@@ -73,7 +73,14 @@
 
 .mobile-menu-contacts {
     display: block;
-    margin-bottom: 64px;
+    
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        margin-bottom: 8vh;
+    }
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        margin-bottom: 64px;
+    }
 
     &__item:first-child {
         margin-bottom: 32px;
