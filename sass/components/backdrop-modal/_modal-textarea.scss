@@ -19,6 +19,10 @@
 
     transition: border-color var(--transition-duration-cubic);
 
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        height: 15vh;
+    }
+
     &::placeholder {
         font-size: 12px;
         line-height: 1.17;

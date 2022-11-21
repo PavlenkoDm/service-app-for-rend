@@ -27,5 +27,11 @@
         background-color: var(--color-accent-secondary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        width: 41vw;
+        height: 6vh;
+        font-size: 12px;
+    }
 }
 

@@ -57,11 +57,18 @@
         &--active {
             color: var(--color-accent);
         }
+
+        @media screen and (max-width: $mobile-breakpoint-predot) {
+            font-size: 35px;
+        }
     }
 }
 
 .mobile-menu__bamper {
-    height: 25vh;
+    height: 34vh;
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        height: 25vh;
+    }    
 }
 
 .mobile-menu-contacts {
@@ -80,6 +87,10 @@
         letter-spacing: 0.02em;
     
         color: var(--color-text-primary);
+
+        @media screen and (max-width: $mobile-breakpoint-predot) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -126,6 +137,7 @@
         color: var(--color-accent);
         @media screen and (max-width: $mobile-breakpoint-predot) {
             display: block;
+            font-size: 14px;
         }
     }    
 }

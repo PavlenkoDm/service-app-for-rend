@@ -13,6 +13,12 @@
     transform: translate(-50%, -50%);
     transition: transform var(--transition-duration-cubic);
 
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        width: 95vw;
+        height: 95vh;
+        padding: 30px;
+    }
+
     @media screen and (max-width: $mobile-breakpoint) {
         width: 95vw;
     }
@@ -40,4 +46,8 @@
     text-align: center;
 
     color: var(--color-titles);
+
+    @media screen and (max-width: $mobile-breakpoint-predot) {
+        font-size: 15px;
+    }
 }
