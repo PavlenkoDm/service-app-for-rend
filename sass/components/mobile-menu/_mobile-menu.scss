@@ -128,13 +128,22 @@
     &__item:not(:first-child) {
         padding-left: 10px;
         border-left: 1px solid rgba(33, 33, 33, 0.2);
+
+        @media screen and (max-width: $mobile-breakpoint-predot) {
+            padding-left: 6px;
+        }
     }
 
     &__item:not(:last-child) {
         padding-right: 10px;
+
+        @media screen and (max-width: $mobile-breakpoint-predot) {
+            padding-right: 6px;
+        }
     }
 
     &__link {
+        display: block;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.22;
@@ -143,8 +152,7 @@
         
         color: var(--color-accent);
         @media screen and (max-width: $mobile-breakpoint-predot) {
-            display: block;
-            font-size: 14px;
+            font-size: 12px;
         }
     }    
 }
