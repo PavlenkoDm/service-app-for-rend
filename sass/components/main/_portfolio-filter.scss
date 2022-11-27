@@ -1,6 +1,20 @@
 .portfolio-filter__list {
-    @extend %flex-j;
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
+    max-width: 80%;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        margin-bottom: 30px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-filter__item:not(:last-child) {
