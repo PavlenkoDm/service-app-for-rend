@@ -24,8 +24,10 @@
         margin-bottom: 30px;
     }
 
-    @media screen and (mix-width: $tablet-breakpoint) {
+    @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint-predot) {
         flex-basis: calc((100% - 30px) / 2);
+        max-width: 354px;
+        height: 100%;
     }
 
     @media screen and (mix-width: $desktop-breakpoint) {
@@ -71,6 +73,7 @@
 }
 
 .portfolio-card__meta {
+    display: block;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
@@ -79,7 +82,13 @@
 
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;    
+}
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint-predot) {
+    li:nth-child(1) .portfolio-card__meta {
+        height: 146px;
+    }
 }
 
 .portfolio-card__title {
