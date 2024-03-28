@@ -10,7 +10,7 @@ async function newsWebAppOnStart(event) {
   try {
     if (event.target.id === 'nwapp-start') {
       console.log('Start news-web-app service');
-      intervalID = setInterval(checkStatus, 60000);
+      intervalID = setInterval(checkStatus, 300000);
     }
   } catch (error) {
     console.log(error);
